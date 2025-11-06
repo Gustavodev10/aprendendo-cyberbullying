@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyberbullying - Aprenda e Previna-se</title>
+<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<nav>
+  <a href="#" onclick="openPage('home')">Início</a>
+  <a href="#" onclick="openPage('about')">O que é</a>
+  <a href="#" onclick="openPage('rights')">Seus Direitos</a>
+  <a href="#" onclick="openPage('quiz')">Quiz</a>
+</nav>
+
+<section id="home" class="page" style="display:block;">
+  <h1>Cyberbullying</h1>
+  <div class="card">
+      <p><strong>Bem-vindo(a)!</strong></p>
+      <p>A internet é um espaço incrível para aprender, se comunicar e se divertir. Mas também pode ser usada para ferir, humilhar e atacar pessoas.</p>
+      <p>Este site foi criado para ensinar como identificar, prevenir e combater o <strong>cyberbullying</strong>.</p>
+      <p>Juntos podemos tornar o ambiente digital mais seguro, respeitoso e empático. 💙</p>
+  </div>
+</section>
+
+<section id="about" class="page">
+  <h2>O que é Cyberbullying?</h2>
+  <div class="card">
+      <p><strong>Cyberbullying</strong> é quando alguém sofre agressões através da internet ou de dispositivos digitais.</p>
+      <p>Alguns exemplos incluem:</p>
+      <ul style="text-align:left;">
+          <li>Ofensas e xingamentos em redes sociais</li>
+          <li>Boatos, montagens e memes que humilham alguém</li>
+          <li>Exposição de fotos ou informações sem permissão</li>
+          <li>Ameaças e perseguições online</li>
+      </ul>
+  </div>
+
+  <div class="card">
+      <h3>✅ Pontos Positivos da Internet</h3>
+      <ul style="text-align:left;">
+          <li>Nos conecta com amigos e familiares</li>
+          <li>Ajuda na aprendizagem e educação</li>
+          <li>Criação de oportunidades e criatividade</li>
+      </ul>
+  </div>
+
+  <div class="card">
+      <h3>⚠️ Cuidados Necessários</h3>
+      <ul style="text-align:left;">
+          <li>Nem tudo é brincadeira: palavras machucam</li>
+          <li>Informações pessoais devem ser protegidas</li>
+          <li>O anonimato pode incentivar agressões</li>
+      </ul>
+  </div>
+</section>
+
+<section id="rights" class="page">
+  <h2>Seus Direitos</h2>
+  <div class="card">
+      <p>No Brasil, o cyberbullying é crime! Você tem direito à <strong>proteção e ao respeito digital</strong>.</p>
+      <p>A Lei Nº 13.185/2015 estabelece o Programa de Combate ao Bullying e Cyberbullying.</p>
+      <p>E mais: o <strong>Marco Civil da Internet</strong> garante seus direitos online, como privacidade e segurança.</p>
+  </div>
+
+  <div class="card">
+      <h3>📌 O que fazer se for vítima?</h3>
+      <ul style="text-align:left;">
+          <li>Bloqueie quem está cometendo a agressão</li>
+          <li>Salve as provas: prints, links e mensagens</li>
+          <li>Peça ajuda a um adulto ou responsável</li>
+          <li>Faça uma denúncia pelos canais oficiais:</li>
+      </ul>
+  </div>
+
+  <div class="card">
+      <h3>📞 Canais de Ajuda e Denúncia</h3>
+      <p><strong>🚔 Polícia Militar:</strong> 190</p>
+      <p><strong>👮‍♂️ Polícia Civil – Crimes Digitais:</strong> 197</p>
+      <p><strong>🛡️ SaferNet (Denúncia segura):</strong></p>
+      <a href="https://new.safernet.org.br/denuncie" target="_blank" style="color:var(--primary);">
+          👉 https://new.safernet.org.br/denuncie
+      </a>
+      <p><strong>📚 Ajuda emocional:</strong> Centro de Valorização da Vida – CVV: 188</p>
+  </div>
+
+  <div class="card">
+      <p><strong>Você não está sozinho(a). Denunciar é o primeiro passo para se proteger e proteger outras pessoas.</strong></p>
+  </div>
+</section>
+
+<section id="quiz" class="page">
+  <h2>Quiz: Você sabe se proteger?</h2>
+
+  <div id="startScreen" class="card">
+    <p>Digite seu nome para começar:</p>
+    <input type="text" id="playerName" placeholder="Seu Nome">
+    <br><br>
+    <button onclick="startQuiz()">Iniciar Quiz</button>
+  </div>
+
+  <div id="quizContent" class="hidden">
+    <div class="progress"><div id="progressBar" class="progress-bar"></div></div>
+    <h3 id="questionText"></h3>
+    <div id="options"></div>
+    <p id="explanation" class="hidden card"></p>
+    <button id="nextBtn" class="hidden" onclick="nextQuestion()">Próxima</button>
+  </div>
+
+  <button id="restartBtn" class="hidden" onclick="restart()">Reiniciar</button>
+  <div id="leaderboard" class="card hidden"></div>
+</section>
+
+<script src="index.js"></script>
+</body>
+</html>
